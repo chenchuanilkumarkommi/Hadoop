@@ -21,7 +21,7 @@ public class ArrayList {
 	}
 	
 //Method to remove an object from an index
-public Object remove(int index) {
+	public Object remove(int index) {
 		if(index < count) {
 			Object obj = data[index];
 			int temp = index;
@@ -38,23 +38,23 @@ public Object remove(int index) {
 		}else {
 			throw new ArrayIndexOutOfBoundsException();
 			}
-}
+	}
 	
 //
-public Object get(int index) {
+	public Object get(int index) {
 		if (index < count) {
 			return data[index];
 		} else {
 			throw new ArrayIndexOutOfBoundsException();
 		}
-}
+	}
 //Resizing the ArrayList
-public void reSizeArray() {
+	public void reSizeArray() {
 		data = Arrays.copyOf(data, data.length * 2);
-}
+	}
 //Size of ArrayList
-public int size() {
+	public int size() {
 		return count;
-}
+	}
 }
 
